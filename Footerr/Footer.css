@@ -1,0 +1,132 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+/* footer ke andar container h  */
+.footer{
+    /* background-color:#2c4152;
+     */
+     background-color: rgb(23, 22, 22);
+    /* padding:70px 0; */
+    padding-top:70px;
+}
+.container{
+      max-width:1170px;
+      /* background-color: brown; */
+      margin:auto;
+      padding-bottom: 50px;
+}
+
+ul{
+    list-style: none;
+}
+.row
+{
+    display:flex;
+    flex-wrap: wrap;
+    /* content div ho gya 4 row me  */
+} 
+.footer-col{
+      width:25%;
+      padding: 0 15px;
+} 
+.footer-col h4{
+       font-size:18px;
+       color:white;
+       text-transform: capitalize;
+       margin-bottom: 35px;
+       font-weight: 500;
+       position:relative;
+   
+}
+/* .footer-col li{
+    font-family: 'Ubuntu', sans-serif;
+} */
+.footer-col h4::before{
+    content:'';
+    position: absolute;
+    left:0;
+    bottom: -10px;
+    /* background-color: #00072be8; */
+    background-color:#012048;
+    height:2px;
+    box-sizing: border-box;
+    width:50px;
+}
+body{
+    line-height: 1.5;
+    font-family: 'Ubuntu', sans-serif;
+}
+.footer-col ul li:not(:last-child)
+{
+    margin-bottom: 10px;
+}
+.footer-col ul li a{
+    font-size: 16px;
+    text-transform: capitalize;
+    text-decoration: none;
+    font-weight: 300;
+    color : #d2d1d1;
+    display:block;
+    transition:all 0.3s ease;
+    
+}
+.footer-col ul li a:hover{
+    color:white;
+    padding-left:8px;
+
+    
+}
+.footer-col .socials a{
+     display: inline-block;
+     height:40px;
+
+     width:40px;
+     background-color:rgba(29, 29, 29, 0.2);
+     text-align: center;
+     /* margin:0 10px 10px 0; */
+     line-height:53px;
+     border-radius: 50%;
+     color:white;
+     transition:all 0.5s ease;
+}
+.footer-col .socials a:hover{
+    color:#24262b;
+    background-color: white;
+
+}
+.footer-bottom{
+    color:azure;
+    /* list-style: 30px; */
+    background-color: #000000;
+    width:100vw;
+    text-align:center;
+    padding:20px 0;
+   
+}
+.footer-bottom p{
+    font-size: 14px;
+    word-spacing: 2px;
+    text-transform: capitalize;
+
+}
+.footer-bottom span{
+    text-transform: uppercase;
+    opacity: .4;
+    font-weight:200;
+}
+@media(max-width:767px)
+{
+    .footer-col{
+        width:50%;
+        margin-bottom: 30px;
+    }
+}
+@media(max-width:574px)
+{
+    .footer-col{
+        width:100%;
+   
+    }
+}
